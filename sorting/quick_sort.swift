@@ -1,6 +1,8 @@
-// Swift implementation of quick sort
-//
-// Author: Renan Freitas
+/* Algorithm: Quick Sort
+ * Time Complexity
+ * Worst Case: O(n^2)
+ * Avg, Best Case: O(nlogn)
+ */
 
 var arr = [1, 5, 4, 2, 8, 6, 29]
 
