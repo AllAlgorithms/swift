@@ -1,6 +1,6 @@
 import Foundation
 
-public class Node{
+public class Node: Equatable{
 	public var label: String
 	public var neighbors: Array<Edge>
 	public var color: String?
@@ -10,5 +10,9 @@ public class Node{
 	public init(_ label: String){
 		self.label = label
 		self.neighbors = Array<Edge>()
+	}
+	
+	public static func == (lhs: Node, rhs: Node) -> Bool{
+		return lhs.label == rhs.label
 	}
 }
