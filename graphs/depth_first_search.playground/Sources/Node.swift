@@ -5,7 +5,8 @@ public class Node: Equatable{
 	public var neighbors: Array<Edge>
 	public var color: String?
 	public var predecessor: Node?
-	public var distance: Int?
+	public var discoveredTimestamp: Int?
+	public var finishedTimestamp: Int?
 	
 	public init(_ label: String){
 		self.label = label
